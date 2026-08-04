@@ -1,22 +1,22 @@
 # Chess System
 
-A desktop chess game written in Java. The existing rules engine is displayed through a Swing interface, so it runs with a standard JDK and has no external dependencies.
+Um jogo de xadrez para desktop escrito em Java. O mecanismo de regras existente é exibido por meio de uma interface Swing, portanto, ele roda com um JDK padrão e não possui dependências externas.
 
-## Run
+Executar
 
-From the project folder:
+A partir da pasta do projeto:
 
-```powershell
 javac -d out (Get-ChildItem -Recurse -Filter *.java src | ForEach-Object FullName)
 java -cp out application.ChessApplication
-```
 
-Click one of your pieces and then a highlighted square. The original terminal entry point remains available in `application.Program`.
+Clique em uma de suas peças e, em seguida, em uma casa destacada. O ponto de entrada original do terminal permanece disponível em application.Program.
 
-## Architecture
 
-- `boardgame`: generic board, positions, and pieces.
-- `chess`: chess-specific rules, move validation, check, checkmate, castling, en passant, and promotion.
-- `application`: the terminal UI and the new Swing user interface.
+Arquitetura
 
-The GUI deliberately delegates rules to `ChessMatch`; it does not decide whether a move is legal.
+boardgame: tabuleiro, posições e peças genéricas.
+chess: regras específicas do xadrez, validação de jogadas, xeque, xeque-mate, roque, en passant e promoção.
+application: a interface de usuário do terminal e a nova interface de usuário Swing.
+A GUI delega deliberadamente as regras ao ChessMatch; ela não decide se uma jogada é válida.
+
+Traduzido com a versão gratuita do tradutor - DeepL.com
