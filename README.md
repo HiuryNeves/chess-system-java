@@ -18,5 +18,3 @@ boardgame: tabuleiro, posições e peças genéricas.
 chess: regras específicas do xadrez, validação de jogadas, xeque, xeque-mate, roque, en passant e promoção.
 application: a interface de usuário do terminal e a nova interface de usuário Swing.
 A GUI delega deliberadamente as regras ao ChessMatch; ela não decide se uma jogada é válida.
-
-Traduzido com a versão gratuita do tradutor - DeepL.com
